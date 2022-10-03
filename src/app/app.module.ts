@@ -1,3 +1,4 @@
+import { ATestModule } from './a/a.module';
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule, Injector } from '@angular/core';
 import { createCustomElement } from '@angular/elements';
@@ -34,7 +35,8 @@ import { CComponent } from './c/c.component';
   exports: [
     AComponent,
     BComponent,
-    CComponent
+    CComponent,
+    ATestModule
   ],
   providers: [],
   bootstrap: []
