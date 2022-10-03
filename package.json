@@ -5,7 +5,7 @@
     "ng": "ng",
     "start": "ng serve",
     "build": "ng build --common-chunk false --configuration production",
-    "deploy:simple": "npm run build && npm version patch && npm publish",
+    "deploy:simple": "npm version patch && npm publish",
     "deploy": "rimraf dist && npm version patch --prefix mfe2 && npm run build && npm publish ./dist/mfe2 --access public",
     "test": "ng test",
     "lint": "ng lint",
