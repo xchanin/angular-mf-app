@@ -14,6 +14,7 @@ import { CComponent } from './c/c.component';
 @NgModule({
   imports: [
     BrowserModule,
+    ATestModule,
     RouterModule.forRoot([
       { path: 'angulartest/a', component: AComponent },
       { path: 'angulartest/b', component: BComponent },
