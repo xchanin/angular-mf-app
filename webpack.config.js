@@ -5,7 +5,7 @@ const share = mf.share;
 
 module.exports = {
   output: {
-    publicPath: "auto",
+    publicPath: "",
     uniqueName: "angulartest"
   },
   optimization: {
