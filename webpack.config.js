@@ -6,7 +6,7 @@ const share = mf.share;
 module.exports = {
   output: {
     publicPath: "auto",
-    uniqueName: "angular3"
+    uniqueName: "angulartest"
   },
   optimization: {
     // Only needed to bypass a temporary bug
@@ -16,8 +16,8 @@ module.exports = {
     new ModuleFederationPlugin({
 
       // For remotes (please adjust)
-      name: "angular3",
-      library: { type: "var", name: "angular3" },
+      name: "angulartest",
+      library: { type: "var", name: "angulartest" },
       filename: "remoteEntry.js",
       exposes: {
         './web-components': './src/bootstrap.ts',
