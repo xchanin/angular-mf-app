@@ -1,4 +1,3 @@
-import { ATestModule } from './a/a.module';
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule, Injector } from '@angular/core';
 import { createCustomElement } from '@angular/elements';
@@ -14,7 +13,6 @@ import { CComponent } from './c/c.component';
 @NgModule({
   imports: [
     BrowserModule,
-    ATestModule,
     RouterModule.forRoot([
       { path: 'angulartest/a', component: AComponent },
       { path: 'angulartest/b', component: BComponent },
@@ -36,8 +34,7 @@ import { CComponent } from './c/c.component';
   exports: [
     AComponent,
     BComponent,
-    CComponent,
-    ATestModule
+    CComponent
   ],
   providers: [],
   bootstrap: []
