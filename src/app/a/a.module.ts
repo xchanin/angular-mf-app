@@ -9,4 +9,4 @@ import { NgModule } from '@angular/core';
     ],
     declarations: [AComponent]
 })
-export class AModule {}
+export class ATestModule {}
