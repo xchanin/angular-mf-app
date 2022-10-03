@@ -27,8 +27,13 @@ import { CComponent } from './c/c.component';
   declarations: [
     AComponent,
     BComponent,
+    CComponent,
     AppComponent,
-    EmptyComponent,
+    EmptyComponent
+  ],
+  exports: [
+    AComponent,
+    BComponent,
     CComponent
   ],
   providers: [],

@@ -5,12 +5,13 @@
     "ng": "ng",
     "start": "ng serve",
     "build": "ng build --common-chunk false --configuration production",
-    "deploy": "rimraf dist && npm version patch && npm run build && npm publish ./dist/mfe2 --access public",
+    "deploy:simple": "npm version patch && npm publish",
+    "deploy": "rimraf dist && npm version patch --prefix mfe2 && npm run build && npm publish ./dist/mfe2 --access public",
     "test": "ng test",
     "lint": "ng lint",
     "e2e": "ng e2e"
   },
-  "private": true,
+  "private": false,
   "dependencies": {
     "@angular-architects/module-federation": "^14.2.0",
     "@angular-architects/module-federation-runtime": "^14.2.0",

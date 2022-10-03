@@ -16,10 +16,10 @@ export class AppComponent {
   constructor(private router: Router) {
   }
 
-  ngOnInit(): void {
-    // Not needed anymore when using the bootstrap helper with
-    // appType == 'microfrontend'
-    // connectRouter(this.router);
-  }
+  // ngOnInit(): void {
+  //   // Not needed anymore when using the bootstrap helper with
+  //   // appType == 'microfrontend'
+  //   // connectRouter(this.router);
+  // }
 
 }
