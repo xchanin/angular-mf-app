@@ -3,7 +3,8 @@
   "version": "0.0.10",
   "scripts": {
     "ng": "ng",
-    "start": "ng serve",
+    "start": "ng serve --port 8558",
+    "start:prod": "ng serve --port 8558 --configuration production -o",
     "build": "ng build --common-chunk false --configuration production",
     "deploy:simple": "npm version patch && npm publish",
     "deploy": "rimraf dist && npm version patch --prefix mfe2 && npm run build && npm publish ./dist/mfe2 --access public",
